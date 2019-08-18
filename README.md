@@ -1,4 +1,4 @@
-# Yii2_OnlineCounter
+# Yii2 OnlineCounter V 0.1
 
 Online counter of visitors for a certain time without using database
 Counts new users, cleans up-to-date time data
@@ -12,3 +12,5 @@ $urlToFile string Url to File default is /web/uploads/data/online.dat
 ```
 
 Put it `<?= OnlineCounter::widget() ?>` to some were on layout
+
+P.S. If someone simplifies all this, i will be glad to add or change this code
