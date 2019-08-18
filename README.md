@@ -1,4 +1,4 @@
-# Yii2 OnlineCounter V 0.1
+# Yii2 Online Counter V 0.1
 
 Online counter of visitors for a certain time without using database
 Counts new users, cleans up-to-date time data
