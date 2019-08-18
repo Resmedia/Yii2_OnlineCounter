@@ -17,7 +17,6 @@
 
 namespace frontend\widgets;
 
-use common\components\helpers\Content;
 use Yii;
 use yii\bootstrap\Widget;
 use yii\web\ForbiddenHttpException;
