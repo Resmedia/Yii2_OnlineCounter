@@ -12,7 +12,7 @@
  * @param $urlToFile string Url to File default is /web/uploads/data/online.dat
  * @return string Count of users on site for the time
  *
- * Put it <?= OnlineCounter::widget() ?> to some were on layout
+ * Put it <?= OnlineCounter::widget() ?> to some where on layout
  */
 
 namespace frontend\widgets;
