@@ -135,7 +135,7 @@ class OnlineCounter extends Widget
         // Take online
         $online = count($dataArray);
 
-        return 'На сайте ' . $online . ' ' . Content::declension($online, ['человек', 'человека', 'человек']);
+        return 'На сайте ' . $online . ' ' . self::declension($online, ['человек', 'человека', 'человек']);
     }
 
     /**
@@ -156,5 +156,25 @@ class OnlineCounter extends Widget
         }
 
         return $bool;
+    }
+    
+    private static function declension($num, $words)
+    {
+        $num = $num % 100;
+        if ($num > 19) {
+            $num = $num % 10;
+        }
+        switch ($num) {
+            case 1: {
+                return($words[0]);
+            }
+            case 2: case 3: case 4: {
+            return($words[1]);
+        }
+            default: {
+                return($words[2]);
+            }
+        }
+
     }
 }
